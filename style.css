@@ -1,0 +1,475 @@
+* {
+ margin: 0;
+ padding: 0;
+box-sizing: border-box;
+}
+html,body {
+height:100%;
+width:100%;
+}
+
+.box1{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.box1 .image{
+padding: 10px 30px;
+height: 300px;
+margin-top: 100px;
+}
+.box1 .image1{
+    height: 600px;
+    margin-left: 230px;
+    position: relative;
+    top: -90px;
+    
+}
+.box2{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+.box2 h1{
+    font-size: 120px;
+    font-family:Arial, Helvetica, sans-serif ;
+    
+}
+.rig{
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 21vw;
+    margin-right: 20px;
+    gap: 40px;
+    
+}
+.rig p{
+    width: 20%;
+    font-size: 20px;
+}
+button{
+    font-size: 14px;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: yellow;
+    border: 1px solid yellow;
+}
+.box3{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .cover{
+        width: 50%;
+        height: 50%;
+        overflow: hidden;
+        position: relative;
+    }
+    .cover img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* display: none; */
+    }
+    .cover:hover img{
+        scale: 1.2;
+        transition: all ease .5s;
+        /* cursor: pointer; */
+    }
+    .cover .inner-cover{
+        text-align: center;
+        width: 100%;
+       left: 30px;
+       top: 10%;
+        z-index: 99;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        color: white;
+    }
+    .inner-cover h4{
+        font-family: abc-m;
+        font-weight: 100;
+        font-size: 30px;
+    }
+    .inner-cover h1{
+        width: 80%;
+        font-family: abc-n;
+        font-size: 40px;
+        
+    
+    }.inner-cover button,.page4 button{
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        font-size: 16px;
+    }
+    .cover:hover button{
+        background: #f5f4f5;
+        color: black;
+    }
+    .box4{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        padding:20px 80px;
+        border-bottom: 2px solid white;
+        background-color: black;
+
+     }
+     .box4 h3{
+        align-items: center;
+        display: flex;
+        font-size: 50px;
+        margin-top: -80px;
+        color: white;
+     }
+     .elem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 80px;
+     }
+     .elem img{
+        height: 250px;
+        width: 180px;
+        position:absolute;
+        transition: all ease-out 0.5s;
+        opacity: 0;
+        transform: translateY(10%) rotate(2deg);
+    
+     }
+     .elem img:nth-child(1){
+        left: 7%;
+     }
+     .elem img:nth-child(3){
+        right: 10%;
+     }
+     .text-div{
+        height: 105px;
+        overflow: hidden;
+     }
+     .text-div h1{
+        font-size: 80px;
+        transition: all ease-out 0.3s;
+        font-weight: 200;
+        color: rgb(241, 233, 233);
+    
+     }
+     .elem .text-div:hover h1{
+        transform: translateY(-100%);
+        color: rgb(239, 142, 158);
+     }
+     .elem:hover img{
+        opacity: 1;
+        transform: translateY(0%) rotate(0deg);
+     }
+     .box5{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: yellow;
+        /* overflow: hidden; */
+    }
+    .card{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: end;
+        padding: 20px;
+        gap: 120px;
+    font-family: abc-n;
+    }
+    #card1{
+        display: flex;
+        justify-content: center;
+        background: #f9ff00;
+        padding: 20px;
+        text-align: center;
+      
+    }
+    .card h1{
+        width: 50%;
+        text-align: center;
+        line-height: .97;
+        font-size: 100px;
+    
+    }
+
+.card p{
+    font-family: sans-serif;
+    padding: 0 20px;
+    width: 30%;
+    font-weight: 100;
+    line-height: 1.2;
+    font-size: 17px;
+}
+.card h2{
+    font-size: 25px;
+    text-align: center;
+    
+}
+.card span{
+    width: 30%;
+  display: flex;
+    margin-right: 40px;
+    font-size: 100px;
+}#card2{
+    background: #cbe813;
+}
+#card3{
+    background: #cefb46;
+}
+#card4{
+    background: #a1f130;
+}
+
+.page6{
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+.line6{
+    width: 1px;
+    background: #4e4d4d;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.left6,.right6{
+    padding: 10px 30px;
+    width: 50%;
+    height: 80%;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left6 h3{
+    font-family: abc-n;
+    font-weight: 100;
+}
+.right6 h1{
+    font-family: abc-n;
+    font-style:italic ;
+    font-size: 35px;
+    opacity: .9;
+
+}
+.right6-down{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.dp{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background:black;
+}
+.dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-view{
+    display: flex;
+    flex-direction: column;
+color: #202020;
+}
+.profile-view h2{
+    font-size: 16px;
+}
+.profile-view h5{
+font-weight: 500;
+}
+.move{
+display: flex;
+}
+.right-move,.left-move{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+}
+.move i{
+    font-size: 25px;
+    color: #4e4d4d;
+}
+.swiper{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.swiper h1{
+    
+    padding: 10px 20px;
+    gap: 12px;
+    white-space: nowrap;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white;
+    /* animation: anime 6000ms linear infinite; */
+}
+.h1{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+
+}
+.h2{
+    font-style: italic;
+}
+.h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.page7{
+    display: flex;
+    height: 40%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+}
+.page7 p{
+    width: 30%;
+}
+
+.page7 h1{
+    font-size: 9vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page8{
+    min-height:100%;
+    width: 100%;
+    background-color:#1C1E1E;
+    /* background-color: red; */
+}
+.page8-left{
+    height: 400px;
+    width: 40%;
+    /* background-color: red; */
+    padding: 40px 40px;
+    position: relative;
+    border-bottom: 1px solid white;
+}
+.page8-left h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.page8-left p{
+    font-size: 15px;
+width: 70%;
+margin-top: 20px;
+color: rgb(133, 125, 125);
+}
+
+.page8-button{
+    bottom: 30px;
+    
+
+
+}
+.page8-button input{
+    padding: 10px 10px;
+    border: transparent;
+    border-radius: 5px;
+    margin-right: 10vw;
+    background-color: black;
+}
+.page8-button {
+    bottom: 30px;
+    position: absolute;
+
+}
+.page8-right{
+    height: 400px;
+    width: 60%;
+    border-bottom: 1px solid white;
+    color: white;
+
+    /* background-color: rgb(165, 144, 144); */
+}
+.page8-center{
+    display: flex;
+    gap: 6vw;
+    padding: 10px 60px;
+
+}
+.page8-right{
+    display: flex;
+    padding: 40px 20px;
+    gap: 3vw;
+    position: relative;
+
+}
+
+
+
+.page8-right .page8-center1{
+    margin-left: 5vw;
+}
+
+.page8-right .page8-center1 h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+.page8-right .page8-center2{
+    margin-left: 5vw;
+}
+
+.page8-right .page8-center2 h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+.page8-right .page8-center3{
+    margin-left: 5vw;
+}
+
+.page8-right .page8-center3 h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+.page9{
+    height: 400px;
+    width: 100%;
+    background-color:#4e4d4d;
+}
+.page9 .image2{
+    padding: 20px 40px;
+}
